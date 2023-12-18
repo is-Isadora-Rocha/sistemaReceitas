@@ -26,11 +26,20 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# Use Redis adapter to run Action Cable in production
-# gem "redis", ">= 4.0.1"
+# melhora a experiência do usuário em aplicativos web - tornano as transições entre página mais rápidas
+# carregando apenas o conteúdo que muda em vez de carregar a página inteira 
+gem "turbolinks"
 
-# Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
-# gem "kredis"
+# integra o framework de design front-end Bootstrap ao seu app Ruby, facilitando a criação de interfaces
+# de usuário atraentes e responsivas
+gem "twitter-bootstrap-rails"
+
+# biblioteca javascript jQuery, simplifica a manipulação do DOM e fonece uma variedade de funções 
+# úteis para interação do usuário
+gem "jquery-rails"
+
+# internacionalização no Rails. Tradução de conteúdo do seu app para diferentes idiomas
+gem "rails-i18n"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -65,3 +74,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "chartkick", "~> 5.0"
+
+gem "devise", "~> 4.9"
+gem "devise-i18n", "~> 1.12"
