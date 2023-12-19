@@ -1,31 +1,33 @@
 <title>Sou CLiente!</title>
-
-<h2>Log in</h2>
+</br>
+<h1 class="h1 mb-3 fw-normal text-center">Login</h1><br/>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-  <img class="mb-4" src="app/assets/images/login_person.png" alt="" width="72" height="72">
-
-  <div class="field">
+  <div class="mb-3 text-center">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
+  <div class="mb-3 text-center">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
-    <div class="field">
+    <div class="mb-3 text-center">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end %>
 
-  <div class="btn btn-outline-primary">
-    <%= f.submit "Log in" %>
+  </br>
+
+  <div class="mb-3 text-center">
+    <%= f.submit "Log in", class: "btn btn-primary"%>
   </div>
 <% end %>
 
+  <div class="mb-3 text-center">
 <%= render "devise/shared/links" %>
+</div>

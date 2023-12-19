@@ -1,6 +1,6 @@
 <!--AQUI É O HTML GLOBAL-->
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR" data-bs-theme="dark">
   <head>
     <!--<title>SistemaReceitas</title>--> 
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,9 +14,14 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-track-turbo": "true", defer: true %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
