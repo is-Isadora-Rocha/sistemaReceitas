@@ -2,7 +2,10 @@
 
 <h2>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+  <img class="mb-4" src="app/assets/images/login_person.png" alt="" width="72" height="72">
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -20,7 +23,7 @@
     </div>
   <% end %>
 
-  <div class="actions">
+  <div class="btn btn-outline-primary">
     <%= f.submit "Log in" %>
   </div>
 <% end %>

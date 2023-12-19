@@ -41,6 +41,9 @@ gem "jquery-rails"
 # internacionalização no Rails. Tradução de conteúdo do seu app para diferentes idiomas
 gem "rails-i18n"
 
+gem 'esbuild-rails'
+
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
@@ -79,3 +82,7 @@ gem "chartkick", "~> 5.0"
 
 gem "devise", "~> 4.9"
 gem "devise-i18n", "~> 1.12"
+
+gem "cssbundling-rails", "~> 1.3"
+
+gem "jsbundling-rails", "~> 1.2"
